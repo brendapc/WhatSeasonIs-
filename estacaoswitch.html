@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seasout</title>
+    
+    <style>
+        body{
+            background-color: black;
+            
+            font: normal 12pt arial;
+            text-align: center;
+        }
+        header{
+            color: white;
+            text-align: center;
+        }
+        section{
+            background-color: rgba(0, 0, 0, .75); /*transparencia preta*/
+	        background-blend-mode: multiply;
+            border-radius: 30px;
+            background-image: url(./transition.jpg);
+            padding: 15px;
+            width: 500px;
+            margin: auto; /*centraizou*/
+
+        }
+        div{
+            
+            color: white;
+            padding: 10px;
+            font: normal 30px arial;
+        }
+        input{
+            font: normal 15px arial;
+        }
+        footer{
+            color: white;
+            text-align: center;
+            font-style: italic;
+
+        }
+    </style>
+</head>
+<body onload="rodar()">
+    <header>
+        <h1>Find out the the season</h1>
+    </header>
+    <section>
+        <div>
+            <h2 >South Hemispherio: </h2>
+            <p id="msg"></p>
+        </div>
+            
+        <div>
+            <h2 >North Hemispherio: </h2>
+            <p id="msg2"></p>
+        </div>
+    </section>
+    <script src="estacao.js"></script>
+    <footer>
+        <p>&copy; Brenda Pereira </p> 
+    </footer>
+</body>
+</html>
